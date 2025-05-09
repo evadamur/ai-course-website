@@ -37,11 +37,12 @@ export default function HomePage() {
       </Card>
 
       {/* Добавляем изображение робота */}
-      <img
-        src="/robot-transparent.png"
-        alt="AI Robot Face"
-        className="robot-image"
-      />
+     <img
+  src="/robot-transparent.png"
+  alt="AI Robot Face"
+  className="robot-image"
+/>
+
 
       <MotionDiv
         initial={{ opacity: 0 }}
