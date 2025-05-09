@@ -25,11 +25,13 @@ export default function HomePage() {
       </div>
 
       {/* Добавляем изображение робота */}
-      <img
-        src="/robot-face-optimized.png"
-        alt="AI Robot Face"
-        className="absolute right-0 bottom-0 w-1/3 lg:w-1/4 z-0 opacity-80 pointer-events-none"
-      />
+     <img
+  src="/robot-transparent.png"
+  alt="AI Robot Face"
+  className="absolute right-0 bottom-0 w-1/3 lg:w-1/4 z-0 opacity-90 pointer-events-none"
+  style={{ maxWidth: "400px", maxHeight: "600px" }}
+/>
+
 
       <Card className="max-w-xl w-full mb-8 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-2xl z-10">
         <CardContent>
