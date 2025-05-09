@@ -1,20 +1,24 @@
 import React from "react";
 import { Card, CardContent } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
-import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
+// Используем динамический импорт для Motion
+const MotionH1 = dynamic(() => import("framer-motion").then((mod) => mod.motion.h1), { ssr: false });
+const MotionDiv = dynamic(() => import("framer-motion").then((mod) => mod.motion.div), { ssr: false });
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center px-6 relative">
       <div className="text-center mb-12 z-10">
-        <motion.h1
+        <MotionH1
           className="text-6xl font-extrabold mb-4 text-white drop-shadow-lg tracking-wide"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           KI – Zeit für Panik!
-        </motion.h1>
+        </MotionH1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto drop-shadow-md">
           Быстрый старт в мир ИИ. Освой ChatGPT и другие инструменты без лишних сложностей. Присоединяйся к курсу и стань экспертом!
         </p>
@@ -38,14 +42,14 @@ export default function HomePage() {
         </CardContent>
       </Card>
 
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
         className="text-sm text-gray-400 mt-8 drop-shadow-md z-10"
       >
         © 2025 KI – Zeit für Panik. Все права защищены.
-      </motion.div>
+      </MotionDiv>
     </div>
   );
 }
