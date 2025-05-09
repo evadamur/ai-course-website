@@ -33,7 +33,7 @@ export default function HomePage() {
             Запишись на курс, узнай больше и начни своё путешествие в мир искусственного интеллекта.
           </p>
           <Button className="w-full py-4 text-lg bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300 shadow-md">
-            Записаться сейчас
+            Попробовать курс
           </Button>
         </CardContent>
       </Card>
