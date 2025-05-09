@@ -24,15 +24,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      {/* Добавляем изображение робота */}
-     <img
-  src="/robot-transparent.png"
-  alt="AI Robot Face"
-  className="absolute right-0 bottom-0 w-1/3 lg:w-1/4 z-0 opacity-90 pointer-events-none"
-  style={{ maxWidth: "400px", maxHeight: "600px" }}
-/>
-
-
+      {/* Добавляем карточку и кнопку */}
       <Card className="max-w-xl w-full mb-8 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-2xl z-10">
         <CardContent>
           <p className="text-lg mb-4 text-gray-100">
@@ -43,6 +35,13 @@ export default function HomePage() {
           </Button>
         </CardContent>
       </Card>
+
+      {/* Добавляем изображение робота */}
+      <img
+        src="/robot-transparent.png"
+        alt="AI Robot Face"
+        className="robot-image"
+      />
 
       <MotionDiv
         initial={{ opacity: 0 }}
