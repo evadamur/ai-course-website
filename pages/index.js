@@ -27,17 +27,20 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          KI – Zeit für Panik!
+          KI
+          Zeit für Panik!
         </MotionH1>
         
         <p className="text-xl text-gray-300 text-center max-w-xl mb-8 drop-shadow-md hover:text-white transition-colors duration-300">
-          Быстрый старт в мир ИИ. Освой ChatGPT и другие инструменты без лишних сложностей. Присоединяйся к курсу и стань экспертом!
+          Как сделать ChatGPT другом или Ваш Помощник в Германии. 
+          Такого  объяснения вы еще не видели! Секреты, нюансы, Подарок. 
+          Запишись на курс!
         </p>
 
         <Card className="max-w-sm w-full mb-6 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300">
           <CardContent>
             <p className="text-base mb-4 text-gray-100 text-center px-4 py-3">
-              Запишись на курс, узнай больше и начни своё путешествие в мир ИИ.
+              Узнать секреты ChatGPT
             </p>
             <Button className="w-full py-3 text-base bg-orange-500 text-white rounded-xl hover:bg-yellow-500 transition duration-300 shadow-md glow-effect">
               Попробовать курс
