@@ -10,6 +10,11 @@ const MotionDiv = dynamic(() => import("framer-motion").then((mod) => mod.motion
 export default function HomePage() {
   return (
     <div className="relative w-full h-screen bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/cyber-connection-bright.png')" }}>
+      
+      {/* Эффекты частиц и дыма */}
+      <div className="particle-bg"></div>
+      <div className="smoke-bg"></div>
+
       <MotionDiv
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -24,9 +29,11 @@ export default function HomePage() {
         >
           KI – Zeit für Panik!
         </MotionH1>
+        
         <p className="text-xl text-gray-300 text-center max-w-xl mb-8 drop-shadow-md hover:text-white transition-colors duration-300">
           Быстрый старт в мир ИИ. Освой ChatGPT и другие инструменты без лишних сложностей. Присоединяйся к курсу и стань экспертом!
         </p>
+
         <Card className="max-w-sm w-full mb-6 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300">
           <CardContent>
             <p className="text-base mb-4 text-gray-100 text-center px-4 py-3">
@@ -37,6 +44,7 @@ export default function HomePage() {
             </Button>
           </CardContent>
         </Card>
+
         <MotionDiv
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
