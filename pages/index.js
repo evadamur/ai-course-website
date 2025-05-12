@@ -37,7 +37,7 @@ export default function HomePage() {
       </Card>
 
       {/* Добавляем изображение робота */}
-     <img
+<img
   src="/robot-transparent.png"
   alt="AI Robot Face"
   className="robot-image"
