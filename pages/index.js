@@ -36,12 +36,24 @@ export default function HomePage() {
         </CardContent>
       </Card>
 
-      {/* Добавляем изображение робота */}
-<img
-  src="/robot-transparent.png"
-  alt="AI Robot Face"
-  className="robot-image"
-/>
+      {/* Добавляем фон */}
+<div className="relative w-full h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/cyber-connection.png')" }}>
+  <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-70">
+    <h1 className="text-6xl font-extrabold text-white mb-6 drop-shadow-lg">KI – Zeit für Panik!</h1>
+    <p className="text-xl text-gray-300 text-center max-w-2xl mb-12 drop-shadow-md">
+      Быстрый старт в мир ИИ. Освой ChatGPT и другие инструменты без лишних сложностей. Присоединяйся к курсу и стань экспертом!
+    </p>
+    <div className="max-w-md w-full mb-8 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-2xl">
+      <p className="text-lg mb-4 text-gray-100 text-center px-6 py-4">
+        Запишись на курс, узнай больше и начни своё путешествие в мир искусственного интеллекта.
+      </p>
+      <button className="w-full py-4 text-lg bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300 shadow-md">
+        Попробовать курс
+      </button>
+    </div>
+    <p className="text-sm text-gray-400 mt-8 drop-shadow-md">© 2025 KI – Zeit für Panik. Все права защищены.</p>
+  </div>
+</div>
 
 
       <MotionDiv
