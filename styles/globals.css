@@ -2,24 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* --- Добавляем стили для робота --- */
+/* Стили для робота */
+.robot-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
 
+/* Мобильные устройства */
 @media (max-width: 768px) {
   .robot-image {
-    width: 50%;
-    position: absolute;
+    width: 200px;
+    bottom: -20px;
     right: 10px;
-    bottom: -50px;
     opacity: 0.8;
   }
 }
 
-@media (min-width: 768px) {
-  .robot-image {
-    width: 300px;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    opacity: 0.9;
-  }
+/* Эффект при наведении */
+.robot-image:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Фон для страницы */
+.bg-opacity-70 {
+  background-color: rgba(0, 0, 0, 0.7);
 }
