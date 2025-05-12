@@ -22,28 +22,28 @@ export default function HomePage() {
         className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-70 px-6"
       >
         <MotionH1
-          className="text-6xl font-extrabold text-white mb-6 drop-shadow-lg tracking-wide hover:scale-105 transition-transform"
+          className="text-6xl font-extrabold text-orange-500 mb-6 drop-shadow-lg tracking-wide hover:scale-105 transition-transform"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          KI
+          KI<br />
           Zeit für Panik!
         </MotionH1>
         
-        <p className="text-xl text-gray-300 text-center max-w-xl mb-8 drop-shadow-md hover:text-white transition-colors duration-300">
-          Как сделать ChatGPT другом или Ваш Помощник в Германии. 
-          Такого  объяснения вы еще не видели! Секреты, нюансы, Подарок. 
+        <p className="text-xl text-gray-300 text-center max-w-xl mb-8 drop-shadow-md hover:text-yellow-400 transition-colors duration-300">
+          Как сделать ChatGPT другом или Ваш Помощник в Германии. <br />
+          Такого объяснения вы еще не видели! Секреты, нюансы, Подарок. <br />
           Запишись на курс!
         </p>
 
         <Card className="max-w-sm w-full mb-6 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300">
           <CardContent>
-            <p className="text-base mb-4 text-gray-100 text-center px-4 py-3">
-              Узнать секреты ChatGPT
+            <p className="text-lg mb-4 text-gray-100 text-center px-6 py-4">
+              Узнай, как использовать ChatGPT для жизни в Германии!
             </p>
-            <Button className="w-full py-3 text-base bg-orange-500 text-white rounded-xl hover:bg-yellow-500 transition duration-300 shadow-md glow-effect">
-              Попробовать курс
+            <Button className="w-full py-4 text-lg bg-orange-500 text-white rounded-xl hover:bg-yellow-500 transition duration-300 shadow-md glow-effect">
+              Начать прямо сейчас
             </Button>
           </CardContent>
         </Card>
@@ -60,5 +60,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-
